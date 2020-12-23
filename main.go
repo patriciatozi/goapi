@@ -1,11 +1,9 @@
 package main
 
-import "file_reader"
-
 import (
-    "fmt"
-    "log"
-    "os"
+    //"fmt"
+    //"log"
+    //"os"
 )
 
 func main() {

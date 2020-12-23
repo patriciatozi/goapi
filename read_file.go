@@ -1,4 +1,4 @@
-package file_reader
+package main
 
 import (
 	"bufio"
@@ -7,12 +7,13 @@ import (
 )
 
 func ReadLinebyLine() {
-    file, err := os.Open("data_files/base_teste.txt")
+    file, err := os.Open("./data_files/base_teste.txt")
     if err != nil {
         log.Fatal(err)
     }
     defer file.Close()
     scanner := bufio.NewScanner(file)
+
     if err := scanner.Err(); err != nil {
         log.Fatal(err)
     }
